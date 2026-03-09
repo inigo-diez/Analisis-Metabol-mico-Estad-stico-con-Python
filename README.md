@@ -2,7 +2,7 @@
 
 ## Descripción del proyecto
 
-Este proyecto implementa un **pipeline completo de análisis metabolómico** sobre datos de cromatografía de gases acoplada a espectrometría de masas (GC-MS). Los datos provienen de 17 experimentos de muestras de datos falsos, por motivo de no poder revelar datos personales, en los que se detectaron aproximadamente 1.230 picos cromatográficos, de los cuales 279 superaron el umbral de calidad de identificación (Match Factor ≥ 700) y fueron anotados contra una base de datos de metabolitos asociados a condiciones de salud mental.
+Este proyecto implementa un **pipeline completo de análisis metabolómico** sobre datos de cromatografía de gases acoplada a espectrometría de masas (GC-MS). Los datos provienen de un dataset, un conjutno de datos de 17 experimentos de muestras pero de datos falsos, por motivo de no poder revelar datos personales, en los que se detectaron aproximadamente 1.230 picos cromatográficos, de los cuales 279 superaron el umbral de calidad de identificación (Match Factor ≥ 700) y fueron anotados contra una base de datos de metabolitos asociados a condiciones de salud mental.
 
 El objetivo principal es identificar **metabolitos candidatos** con patrones diferenciados entre grupos de muestras, combinando análisis exploratorio, clustering no supervisado, pruebas estadísticas e interpretación basada en valores SHAP. Las técnicas empleadas incluyen reducción dimensional (PCA), clustering jerárquico y K-Means, pruebas no paramétricas con corrección FDR, modelos de clasificación supervisada (Random Forest y XGBoost) y análisis de importancia de características con SHAP.
 
@@ -56,11 +56,29 @@ El notebook [00 – Pipeline completo](notebooks/00_proyecto_completo.ipynb) int
 
 ## Figuras principales *(resto de figuras en el notebook completo)*
 
+---
+
+### Anotación de metabolitos – Resultados del matching
+
+![Matching resultados](figures/02_matching_results.png)
+
+Resumen visual del proceso de anotación: proporción de picos con coincidencia exacta, coincidencia en caso de ser un compuesto derivado o sin match contra la base de datos de referencia. El umbral de Match Factor ≥ 700 garantiza que solo se retienen picos con una identidad química fiable para el análisis.
+
+---
+
+### Preprocesamiento – Distribución de intensidades y transformación log₂
+
+![Preprocesamiento](figures/03_preprocessing.png)
+
+Panel del preprocesamiento: distribución de intensidades por experimento antes y después de la transformación log₂ y el escalado robusto. La transformación corrige la fuerte asimetría de los datos del instrumento GC-MS y estabiliza la varianza entre muestras, condición necesaria para el análisis multivariante posterior.
+
+---
+
 ### PCA de los 17 experimentos
 
 ![PCA de experimentos](figures/04_pca_experiments.png)
 
-El PCA muestra que la PC1 explica el ~70% de la varianza total del dataset. Exp_9 aparece como un outlier extremo, completamente separado del resto de las muestras en el primer componente principal. Esta separación domina toda la estructura global del dataset.
+El PCA muestra que la PC1 explica el ~70% de la varianza total del dataset. Exp_9 aparece como un outlier claro, completamente separado del resto de las muestras en el primer componente principal. Esta separación domina toda la estructura global del conjutno de datosque se aprecia en el notebook al completo y en las figuras que se muestran a continuación.
 
 ---
 
@@ -68,7 +86,7 @@ El PCA muestra que la PC1 explica el ~70% de la varianza total del dataset. Exp_
 
 ![Correlación](figures/04_correlation_experiments.png)
 
-La matriz de correlación cuantifica la similitud entre los 17 experimentos a partir de sus perfiles de intensidad. El bloque de alta correlación que forman la mayoría de las muestras confirma la cohesión del grupo principal, mientras que Exp_9 muestra valores notablemente bajos o negativos respecto al resto, reforzando su identificación como outlier extremo con una métrica independiente del PCA.
+La matriz de correlación cuantifica la similitud entre los 17 experimentos a partir de sus perfiles de intensidad. El bloque de alta correlación que forman la mayoría de las muestras confirma la cohesión del grupo principal sobre todo entre los experimentos 12 al 17, mientras que Exp_9 muestra valores notablemente bajos o negativos respecto al resto, reforzando su identificación como outlier extremo con una métrica independiente del PCA.
 
 ---
 
@@ -76,7 +94,7 @@ La matriz de correlación cuantifica la similitud entre los 17 experimentos a pa
 
 ![Top variable compounds](figures/04_top_variable_compounds.png)
 
-Los 20 picos cromatográficos con mayor varianza entre los 17 experimentos son los que más información aportan para distinguir entre muestras. Este gráfico identifica qué metabolitos presentan la señal más diferenciada a lo largo del dataset y orienta la selección de candidatos para el análisis posterior de clustering y machine learning.
+Los 20 picos cromatográficos con mayor varianza entre los 17 experimentos son los que más información aportan para distinguir entre muestras. Este gráfico identifica qué metabolitos presentan la señal más diferenciada a lo largo del dataset y orienta la selección de candidatos para el análisis posterior del clustering y del intento de machine learning.
 
 ---
 
@@ -108,7 +126,7 @@ El clustermap agrupa simultáneamente experimentos y metabolitos por similitud d
 
 ![Clustermap refinado](figures/05_clustermap_no_outlier.png)
 
-Al excluir los outliers, el clustermap revela una estructura interna más rica con tres grupos diferenciados. Los gradientes de color son más sutiles y biológicamente más plausibles que en el análisis original.
+Al excluir los outliers, el clustermap revela una estructura interna con tres grupos diferenciados. Se debe destacar que los gradientes de color son más intensos.
 
 ---
 
@@ -116,7 +134,7 @@ Al excluir los outliers, el clustermap revela una estructura interna más rica c
 
 ![SHAP beeswarm](figures/08_shap_beeswarm_original.png)
 
-Los 20 metabolitos con mayor importancia SHAP media absoluta para la separación de clusters. Phenol y Humulene encabezan el ranking, siendo los principales impulsores de la clasificación del modelo sobre el análisis original.
+Ranking de los metabolitos con mayor importancia SHAP media absoluta en el modelo Random Forest del análisis original. Los compuestos con valores SHAP más altos son los que más influyen en la capacidad del modelo para separar los clusters. Por ello, este gráfico permite identificar qué metabolitos tienen mayor peso predictivo en la clasificación.
 
 ---
 
@@ -136,27 +154,11 @@ La comparación evidencia cómo Exp_9 distorsiona el ranking de importancia SHAP
 
 ---
 
-### Preprocesamiento – Distribución de intensidades y transformación log₂
-
-![Preprocesamiento](figures/03_preprocessing.png)
-
-Panel del preprocesamiento: distribución de intensidades por experimento antes y después de la transformación log₂ y el escalado robusto. La transformación corrige la fuerte asimetría de los datos GC-MS y estabiliza la varianza entre muestras, condición necesaria para el análisis multivariante posterior.
-
----
-
-### Anotación de metabolitos – Resultados del matching
-
-![Matching resultados](figures/02_matching_results.png)
-
-Resumen visual del proceso de anotación: proporción de picos con coincidencia exacta, por derivado o sin match contra la base de datos de referencia. El umbral de Match Factor ≥ 700 garantiza que solo se retienen picos con una identidad química fiable para el análisis.
-
----
-
 ### Heatmap top 30 metabolitos por fold change (análisis original)
 
 ![Heatmap top30](figures/06_heatmap_top30.png)
 
-Heatmap de abundancias de los 30 metabolitos con mayor fold change absoluto entre clusters, mostrando su distribución a lo largo de los 17 experimentos. El patrón de colores evidencia la separación extrema de Exp_9 respecto al grupo principal, con bloques de metabolitos claramente sobreexpresados en el outlier que apenas varían en el resto de las muestras.
+Heatmap de abundancias (z-score) de los 30 metabolitos con mayor fold change entre clusters, mostrando su distribución a lo largo de los 17 experimentos. Se observa que Exp_9 presenta un patrón claramente diferenciado respecto al resto de muestras, mientras que el grupo principal muestra perfiles más homogéneos. Este comportamiento explica en parte la separación observada en los análisis multivariantes.
 
 ---
 
@@ -164,7 +166,7 @@ Heatmap de abundancias de los 30 metabolitos con mayor fold change absoluto entr
 
 ![Fold change refinado](figures/06_foldchange_ranking_no_outlier.png)
 
-Ranking de los metabolitos con mayor fold change absoluto en el análisis refinado (15 experimentos, 3 clusters). Los fold changes son moderados y biológicamente más plausibles que en el análisis con outliers, representando la señal metabólica real del grupo principal de muestras.
+Ranking de los metabolitos con mayor fold change absoluto en el análisis refinado (15 experimentos, 3 clusters). Los compuestos situados a ambos extremos del gráfico muestran las mayores diferencias de abundancia entre clusters. Al eliminar los outliers, los cambios observados son más moderados y reflejan mejor las diferencias metabólicas dentro del grupo principal de muestras.
 
 ---
 
@@ -172,23 +174,19 @@ Ranking de los metabolitos con mayor fold change absoluto en el análisis refina
 
 ![ML refinado](figures/07_ml_no_outlier.png)
 
-Panel de resultados de los modelos Random Forest y XGBoost sobre el análisis refinado: matrices de confusión y métricas LOO-CV por cluster. La separabilidad entre los tres grupos es apreciable y consistente entre ambos modelos, lo que aumenta la robustez de los metabolitos identificados como relevantes.
+Resultados de Random Forest y XGBoost en el análisis refinado. Las matrices de confusión muestran que la mayoría de las muestras se clasifican correctamente, aunque el tercer cluster resulta más difícil de identificar, probablemente por su menor tamaño. El ranking de importancia del modelo señala además los metabolitos que más contribuyen a la separación entre grupos. En conjunto, las métricas de validación indican un buen rendimiento de los modelos.
 
 ---
 
 ## Conclusiones
 
-1. **Estructura dominada por outlier:** La mayor parte de la variabilidad del dataset está dominada por Exp_9, cuyo perfil metabolómico es radicalmente diferente al del resto de las muestras. Esto limita la interpretabilidad biológica del análisis original.
+ras el preprocesamiento y filtrado de los datos, el conjunto final quedó constituido por 279 metabolitos detectados en 17 experimentos, todos ellos con match espectral superior a 700, eliminándose además compuestos asociados a contaminantes analíticos como silanos u otros artefactos instrumentales. Este filtrado permitió centrar el análisis en metabolitos con mayor fiabilidad de identificación y potencial relevancia biológica.
 
-2. **Outliers confirmados:** Exp_9 y Exp_11 son experimentos atípicos confirmados de forma convergente por PCA, Isolation Forest y clustering jerárquico. Su exclusión es necesaria para acceder a la señal biológica del grupo principal.
+El análisis exploratorio mediante PCA, matrices de correlación y métodos de clustering mostró que la mayoría de los experimentos presentan perfiles metabolómicos relativamente consistentes. No obstante, Exp_9 aparece de forma sistemática como un experimento atípico, tanto en los análisis multivariantes como en los métodos de detección de outliers, además de presentar un número significativamente mayor de metabolitos no detectados.
 
-3. **Subestructura biológica:** El análisis refinado (15 exp., K=3) revela tres subgrupos con diferencias metabolómicas reales, lo que sugiere la existencia de patrones biológicos interpretables en las muestras una vez eliminados los outliers extremos.
+Una vez excluidos los experimentos más extremos, el análisis refinado permitió identificar con mayor claridad la estructura del conjunto principal de datos. La combinación de análisis estadísticos y modelos de machine learning permitió priorizar metabolitos candidatos potencialmente relevantes, integrando métricas como el tamaño del efecto, la significación estadística y la importancia de las variables en los modelos predictivos.
 
-4. **Metabolitos candidatos priorizados:** Los metabolitos identificados por intersección de ≥2 criterios independientes (SHAP, fold change, p-valor) en el análisis refinado son los candidatos más sólidos. Destacan Cyclohexanol acetato, Benzeneacetaldehyde y p-Cresol, todos con asociaciones previas a condiciones de salud mental en la base de datos de referencia.
-
-5. **Modelos de clasificación:** Random Forest y XGBoost muestran buena separabilidad en LOO-CV, aunque las métricas deben interpretarse con cautela dado el pequeño tamaño muestral. La coherencia entre ambos modelos en los metabolitos más importantes aumenta la robustez de las identificaciones.
-
-6. **Limitaciones y próximos pasos:** Todos los metabolitos identificados son candidatos priorizados, no biomarcadores confirmados. Se requiere validación con mayor número de muestras, métodos cuantitativos dirigidos (GC-MS cuantitativo, RMN) y control de variables de confusión técnicas y biológicas.
+Finalmente, comparando la cobertura metabolómica de los distintos experimentos, Exp_12 y Exp_15 destacan por presentar el menor número de metabolitos no detectados dentro del grupo principal. Entre ellos, Exp_12 muestra el mejor equilibrio entre número de metabolitos detectados y estabilidad del perfil analítico, por lo que se propone como la condición experimental más adecuada para futuros análisis de muestras de pacientes y controles.
 
 ---
 
