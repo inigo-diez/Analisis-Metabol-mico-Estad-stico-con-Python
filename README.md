@@ -54,7 +54,7 @@ El notebook [00 – Pipeline completo](notebooks/00_proyecto_completo.ipynb) int
 
 ---
 
-## Figuras principales
+## Figuras principales *(resto de figuras en el notebook completo)*
 
 ### PCA de los 17 experimentos
 
@@ -90,7 +90,7 @@ Al excluir los outliers, el clustermap revela una estructura interna más rica c
 
 ### Importancia SHAP – Top 20 metabolitos (análisis original)
 
-![SHAP beeswarm](figures/08_shap_beeswarm_original.png)
+![SHAP beeswarm](08_shap_beeswarm_original.png)
 
 Los 20 metabolitos con mayor importancia SHAP media absoluta para la separación de clusters. Phenol y Humulene encabezan el ranking, siendo los principales impulsores de la clasificación del modelo sobre el análisis original.
 
@@ -98,7 +98,7 @@ Los 20 metabolitos con mayor importancia SHAP media absoluta para la separación
 
 ### Metabolitos candidatos priorizados – Bubble plot (análisis refinado)
 
-![Bubble plot refinado](figures/08_bubble_candidatos_refinado.png)
+![Bubble plot refinado](08_bubble_candidatos_refinado.png)
 
 El bubble plot integra tres métricas simultáneamente: importancia SHAP (eje X), |log2FC| (eje Y) y evidencia estadística (tamaño de burbuja). Los candidatos en la zona superior derecha con burbujas grandes representan las señales metabólicas con mayor convergencia de evidencia.
 
@@ -106,10 +106,41 @@ El bubble plot integra tres métricas simultáneamente: importancia SHAP (eje X)
 
 ### Comparación SHAP: análisis original vs. refinado
 
-![Comparación SHAP](figures/08_shap_comparison_orig_vs_refined.png)
+![Comparación SHAP](08_shap_comparison_orig_vs_refined.png)
 
 La comparación evidencia cómo Exp_9 distorsiona el ranking de importancia SHAP. Algunos metabolitos pierden relevancia al excluir el outlier, mientras que otros emergen como más discriminantes en el contexto del grupo principal.
 
+---
+
+### Preprocesamiento – Distribución de intensidades y transformación log₂
+
+![Preprocesamiento](figures/03_preprocessing.png)
+
+Panel del preprocesamiento: distribución de intensidades por experimento antes y después de la transformación log₂ y el escalado robusto. La transformación corrige la fuerte asimetría de los datos GC-MS y estabiliza la varianza entre muestras, condición necesaria para el análisis multivariante posterior.
+
+---
+
+### Anotación de metabolitos – Resultados del matching
+
+![Matching resultados](figures/02_matching_results.png)
+
+Resumen visual del proceso de anotación: proporción de picos con coincidencia exacta, por derivado o sin match contra la base de datos de referencia. El umbral de Match Factor ≥ 700 garantiza que solo se retienen picos con una identidad química fiable para el análisis.
+
+---
+
+### Fold change ranking – Análisis refinado
+
+![Fold change refinado](figures/06_foldchange_ranking_no_outlier.png)
+
+Ranking de los metabolitos con mayor fold change absoluto en el análisis refinado (15 experimentos, 3 clusters). Los fold changes son moderados y biológicamente más plausibles que en el análisis con outliers, representando la señal metabólica real del grupo principal de muestras.
+
+---
+
+### ML – Resultados y métricas (análisis refinado)
+
+![ML refinado](figures/07_ml_no_outlier.png)
+
+Panel de resultados de los modelos Random Forest y XGBoost sobre el análisis refinado: matrices de confusión y métricas LOO-CV por cluster. La separabilidad entre los tres grupos es apreciable y consistente entre ambos modelos, lo que aumenta la robustez de los metabolitos identificados como relevantes.
 ---
 
 ## Conclusiones
