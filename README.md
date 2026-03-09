@@ -114,7 +114,7 @@ Al excluir los outliers, el clustermap revela una estructura interna más rica c
 
 ### Importancia SHAP – Top 20 metabolitos (análisis original)
 
-![SHAP beeswarm](08_shap_beeswarm_original.png)
+![SHAP beeswarm](figures/08_shap_beeswarm_original.png)
 
 Los 20 metabolitos con mayor importancia SHAP media absoluta para la separación de clusters. Phenol y Humulene encabezan el ranking, siendo los principales impulsores de la clasificación del modelo sobre el análisis original.
 
@@ -122,7 +122,7 @@ Los 20 metabolitos con mayor importancia SHAP media absoluta para la separación
 
 ### Metabolitos candidatos priorizados – Bubble plot (análisis refinado)
 
-![Bubble plot refinado](08_bubble_candidatos_refinado.png)
+![Bubble plot refinado](figures/08_bubble_candidatos_refinado.png)
 
 El bubble plot integra tres métricas simultáneamente: importancia SHAP (eje X), |log2FC| (eje Y) y evidencia estadística (tamaño de burbuja). Los candidatos en la zona superior derecha con burbujas grandes representan las señales metabólicas con mayor convergencia de evidencia.
 
@@ -130,7 +130,7 @@ El bubble plot integra tres métricas simultáneamente: importancia SHAP (eje X)
 
 ### Comparación SHAP: análisis original vs. refinado
 
-![Comparación SHAP](08_shap_comparison_orig_vs_refined.png)
+![Comparación SHAP](figures/08_shap_comparison_orig_vs_refined.png)
 
 La comparación evidencia cómo Exp_9 distorsiona el ranking de importancia SHAP. Algunos metabolitos pierden relevancia al excluir el outlier, mientras que otros emergen como más discriminantes en el contexto del grupo principal.
 
