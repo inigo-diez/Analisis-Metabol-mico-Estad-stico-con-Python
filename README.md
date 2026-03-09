@@ -1,4 +1,4 @@
-# Análisis Metabolómico GC-MS: Identificación de Metabolitos Candidatos en Salud Mental
+# Análisis Metabolómico: Identificación de Metabolitos Candidatos en Salud Mental
 
 ## Descripción del proyecto
 
