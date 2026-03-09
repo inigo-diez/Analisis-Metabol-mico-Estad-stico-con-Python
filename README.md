@@ -58,7 +58,7 @@ El notebook [00 – Pipeline completo](notebooks/00_proyecto_completo.ipynb) int
 
 ### PCA de los 17 experimentos
 
-![PCA de experimentos](results/figures/04_pca_experiments.png)
+![PCA de experimentos](figures/04_pca_experiments.png)
 
 El PCA muestra que la PC1 explica el ~70% de la varianza total del dataset. Exp_9 aparece como un outlier extremo, completamente separado del resto de las muestras en el primer componente principal. Esta separación domina toda la estructura global del dataset.
 
@@ -66,7 +66,7 @@ El PCA muestra que la PC1 explica el ~70% de la varianza total del dataset. Exp_
 
 ### Dendrograma de clustering jerárquico
 
-![Dendrograma](results/figures/05_dendrogram_experiments.png)
+![Dendrograma](figures/05_dendrogram_experiments.png)
 
 El dendrograma confirma la separación extrema de Exp_9, que forma una rama propia con el mayor enlace de disimilitud del árbol. El resto de los experimentos se agrupan en una rama compacta con distintos subgrupos internos.
 
@@ -74,7 +74,7 @@ El dendrograma confirma la separación extrema de Exp_9, que forma una rama prop
 
 ### Clustermap combinado (análisis original)
 
-![Clustermap original](results/figures/05_clustermap.png)
+![Clustermap original](figures/05_clustermap.png)
 
 El clustermap agrupa simultáneamente experimentos y metabolitos por similitud de perfil. Se observan dos bloques principales: Exp_9 con un patrón de abundancias radicalmente diferente, y el grupo principal formando un bloque compacto.
 
