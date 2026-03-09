@@ -1,0 +1,16 @@
+,Metabolito,Importancia SHAP,|log2FC|,p_ajustado
+1,"2,3-Pentanedione",0.00162,14.23,0.1622
+2,2-Butyl-3-(4-β-diethylaminoethoxybenzoyl)benzofuran,0.00043,8.429,0.2798
+3,Acetic acid ethenyl ester,0.00129,7.301,0.2798
+4,D-Limonene,0.00429,7.05,0.0371
+5,"Benzenepropionic acid, 2-tetradecyl ester",0.00252,6.203,0.0376
+6,"Cyclohexanol, 1-methyl-4-(1-methylethenyl)-, acetate",0.0051,4.982,0.0355
+7,"Hexanoic acid, 2-ethyl-",0.00247,4.817,0.0639
+8,Hexanal,0.00059,4.708,0.247
+9,2-Pentanone,0.00092,4.659,0.1119
+10,"2-Butenal, (Z)-",0.0,4.556,0.3825
+11,N-Dimethylaminomethyl-tert.-butyl-isopropylphosphine,0.00069,4.514,0.121
+12,"Benzene, 1-methyl-3-(1-methylethyl)-",0.00248,4.298,0.3085
+13,Methional,0.00195,4.246,0.0355
+14,"2,6-Diphenylpyridine",0.00014,3.957,0.1064
+15,"1,3-Dioxolane",0.0,3.833,0.6789

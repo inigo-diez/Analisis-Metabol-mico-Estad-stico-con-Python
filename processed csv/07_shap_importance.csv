@@ -1,0 +1,280 @@
+metabolite,shap_mean_abs
+Humulene,0.00680301990391215
+Phenol,0.006286890871654086
+Acetic acid ethenyl ester,0.0059574468085106394
+2-Hexadecanone,0.005483870967741934
+"1,2,4-Metheno-1H-indene, octahydro-1,7a-dimethyl-5-(1-methylethyl)-, [1S-(1α,2α,3aβ,4α,5α,7aβ,8S*)]-",0.005319148936170213
+Benzeneacetaldehyde,0.005122168840082359
+cis-Calamenene,0.0049677419354838695
+"Indole, 3-methyl-",0.0049574468085106385
+γ-Muurolene,0.004638297872340427
+"2,3-Pentanedione",0.004584415584415584
+"Hexanoic acid, 2-ethyl-",0.004387435488327732
+Methyl salicylate,0.004319148936170212
+Benzeneacetic acid,0.004319148936170212
+Pentadecane,0.004319148936170212
+Dodecanoic acid,0.004222713456756009
+"Ethanol, 2-(2-butoxyethoxy)-",0.004122168840082362
+α-Cubebene,0.004000000000000002
+"2-Decenal, (E)-",0.004000000000000002
+3-Carene,0.004000000000000002
+"5,9-Undecadien-2-one, 6,10-dimethyl-",0.003967741935483872
+"1-Hexanol, 2-ethyl-",0.003803019903912148
+2-Tetradecanone,0.003803019903912148
+p-Cresol,0.003652173913043477
+"Tetradecane, 3-methyl-",0.0036382978723404243
+"Dodecane, 2,6,10-trimethyl-",0.0036382978723404243
+γ-Dodecalactone,0.0034838709677419352
+"2(3H)-Furanone, 5-heptyldihydro-",0.0034838709677419352
+Methional,0.003435544430538172
+"1-Hexanol, 2-ethyl-",0.0033191489361702117
+"Bicyclo[3.1.1]hept-2-ene, 3,6,6-trimethyl-",0.0033191489361702117
+Dimethyl trisulfide,0.0033191489361702117
+1-Pentadecene,0.0033191489361702117
+2-Tetradecanone,0.0033191489361702117
+"2,4,7,9-Tetramethyl-5-decyn-4,7-diol",0.0033191489361702117
+Dimethyl trisulfide,0.0033191489361702117
+trans-β-Ocimene,0.0033017077798861475
+Acetone,0.0030000000000000005
+"1,3-Dioxolane",0.0030000000000000005
+Tetradecane,0.0030000000000000005
+Octanal,0.0030000000000000005
+1-Pentadecene,0.0029677419354838712
+2-Tridecanone,0.002803019903912148
+α-acorenol,0.002803019903912148
+Phenylethyl Alcohol,0.002803019903912148
+"Cyclohexanol, 1-methyl-4-(1-methylethenyl)-, acetate",0.002803019903912148
+"5,9-Undecadien-2-one, 6,10-dimethyl-",0.002652173913043477
+1-Pentadecene,0.002638297872340425
+"Disulfide, dimethyl",0.0025206508135168955
+2-Hexadecanone,0.002483870967741935
+"cis-Muurola-4(15),5-diene",0.002483870967741935
+"Guanidine, methyl-",0.002483870967741935
+"Dodecane, 2,6,10-trimethyl-",0.002483870967741935
+"4-Methylcatechol, 2TMS derivative",0.002483870967741935
+"2,4,7,9-Tetramethyl-5-decyn-4,7-diol",0.002483870967741935
+"Benzeneacetaldehyde, α-ethylidene-",0.002483870967741935
+"9-Octadecene, (E)-",0.002483870967741935
+"Acetic acid, methoxy-",0.002483870967741935
+Acetone,0.002483870967741935
+"2,3-Pentanedione",0.0024285714285714292
+2-Propenal,0.0023191489361702134
+Octadecane,0.0023191489361702134
+γ-Dodecalactone,0.0023191489361702134
+"(1R,3E,7E,11R)-1,5,5,8-Tetramethyl-12-oxabicyclo[9.1.0]dodeca-3,7-diene",0.0023191489361702134
+"Sulfurous acid, di(2-ethylhexyl) ester",0.0023191489361702134
+"2,3-Pentanedione",0.0023191489361702134
+Hexanal,0.0023191489361702134
+Hexanal,0.0023191489361702134
+"Cyclohexene, 4-methylene-1-(1-methylethyl)-",0.0023191489361702134
+"1-Octanol, 2-butyl-",0.0023191489361702134
+Dodecane,0.0023191489361702134
+p-Cresol,0.0023191489361702134
+2-Tridecanol,0.0023191489361702134
+Erucin,0.0023191489361702134
+trans-α-Bergamotene,0.0023191489361702134
+"Butanal, 3-methyl-",0.0023191489361702134
+"Acetic acid, trifluoro-, 3,7-dimethyloctyl ester",0.0023191489361702134
+"1-Isopropyl-4,7-dimethyl-1,2,3,5,6,8a-hexahydronaphthalene",0.0023191489361702134
+(Z)-1-Methyl-4-(6-methylhept-5-en-2-ylidene)cyclohex-1-ene,0.0023191489361702134
+"Propanal, 2-methyl-",0.0023191489361702134
+Indole,0.0023191489361702134
+Germacrene D,0.0023191489361702134
+1-Heptanol,0.0022765957446808515
+"2,3-Pentanedione",0.002201501877346684
+"5-Hepten-2-one, 6-methyl-",0.002000000000000001
+Toluene,0.002000000000000001
+"Cyclohexene, 4-methylene-1-(1-methylethyl)-",0.002000000000000001
+Heptadecane,0.002000000000000001
+"Benzeneacetaldehyde, α-ethylidene-",0.002000000000000001
+"Butanal, 2-methyl-",0.002000000000000001
+"1H-Pyrrole-2,5-dione, 3-ethyl-4-methyl-",0.002000000000000001
+"5-Hepten-2-one, 6-methyl-",0.002000000000000001
+2-Pentadecanone,0.002000000000000001
+.alfa.-Copaene,0.002000000000000001
+n-Decanoic acid,0.002000000000000001
+.alfa.-Copaene,0.002000000000000001
+Benzeneacetaldehyde,0.002000000000000001
+"Furan, 2,3-dihydro-",0.002000000000000001
+β-Bisabolene,0.002000000000000001
+Caryophyllene oxide,0.002000000000000001
+"Butanal, 3-methyl-",0.0018823529411764715
+Methional,0.0018823529411764715
+"3-Dodecene, (E)-",0.001584415584415585
+2-Tetradecanone,0.001584415584415585
+"Bicyclo[3.1.1]heptane, 6,6-dimethyl-2-methylene-, (1S)-",0.001584415584415585
+Heptanal,0.0014838709677419356
+"1-Hexanol, 2-ethyl-",0.0014838709677419356
+"2-Hexadecene, 3,7,11,15-tetramethyl-, [R-[R*,R*-(E)]]-",0.0014838709677419356
+2-Butanone,0.0014838709677419356
+"Butanal, 2-methyl-",0.0014838709677419356
+Hexanal,0.0014838709677419356
+"2,6-Diphenylpyridine",0.001428571428571429
+"Butanal, 2-methyl-",0.0014193548387096775
+"Benzeneacetaldehyde, α-ethylidene-",0.0014193548387096775
+"Butanal, 3-methyl-",0.0014193548387096775
+2-Undecanol,0.0013191489361702126
+2-Butanone,0.0013191489361702126
+Nonanal,0.0013191489361702126
+"Benzeneacetaldehyde, α-ethylidene-",0.0013191489361702126
+"4,8,12-Tetradecatrien-1-ol, 5,9,13-trimethyl-",0.0013191489361702126
+Dimethyl trisulfide,0.0013191489361702126
+Phenol,0.0013191489361702126
+Octanal,0.0013191489361702126
+Octanal,0.0013191489361702126
+Phenol,0.0013191489361702126
+"1,3-Dioxolane, 2-ethyl-",0.0013191489361702126
+Caryophyllene,0.0013191489361702126
+"1-Isopropyl-4,7-dimethyl-1,2,3,5,6,8a-hexahydronaphthalene",0.0013191489361702126
+Phenylethyl Alcohol,0.0013191489361702126
+"Butanal, 3-methyl-",0.0013191489361702126
+Hexanal,0.0013191489361702126
+"2,3-Pentanedione",0.0013191489361702126
+Methional,0.0013191489361702126
+2-Dodecanone,0.0013191489361702126
+2-Tetradecanone,0.0013191489361702126
+"Pentane, 3-methyl-",0.0013043478260869564
+"Propane, 2-methoxy-2-methyl-",0.001276595744680851
+"2,3-Pentanedione",0.001276595744680851
+2-Pentanone,0.001276595744680851
+"Butanal, 2-methyl-",0.001276595744680851
+"Butanal, 2-methyl-",0.001276595744680851
+Methional,0.001276595744680851
+"Propane, 2-methoxy-2-methyl-",0.0012340425531914892
+"1-Naphthalenamine, N-phenyl-",0.0011914893617021277
+Dimethyl sulfone,0.0010000000000000005
+"Cyclohexanol, 1-methyl-4-(1-methylethenyl)-, acetate",0.0010000000000000005
+Methional,0.0010000000000000005
+"2,3-Pentanedione",0.0010000000000000005
+2-Furancarbonyl chloride,0.0010000000000000005
+Hexadecane,0.0010000000000000005
+2-Propenal,0.0010000000000000005
+"1,3,5-Cycloheptatriene, 3,7,7-trimethyl-",0.0010000000000000005
+2-Tetradecanone,0.0010000000000000005
+"cis-muurola-4(14),5-diene",0.0010000000000000005
+α-Cubebene,0.0010000000000000005
+n-Hexane,0.0010000000000000005
+"2H-Indol-2-one, 1,3-dihydro-",0.0010000000000000005
+"Pentadecafluorooctanoic acid, pentadecyl ester",0.0010000000000000005
+"Tetradecane, 2-methyl-",0.0010000000000000005
+Nonanoic acid,0.0010000000000000005
+"Benzeneacetaldehyde, α-ethylidene-",0.0010000000000000005
+"Dodecane, 2,6,11-trimethyl-",0.0010000000000000005
+"Benzeneacetaldehyde, α-ethylidene-",0.0010000000000000005
+"Disulfide, dimethyl",0.0010000000000000005
+"Bicyclo[3.1.1]hept-2-ene, 3,6,6-trimethyl-",0.0010000000000000005
+"Disulfide, dimethyl",0.0010000000000000005
+"Disulfide, dimethyl",0.0010000000000000005
+"Cyclohexanol, 1-methyl-4-(1-methylethenyl)-, acetate",0.0010000000000000005
+Phenol,0.0010000000000000005
+"2-Butenal, (E)-",0.0010000000000000005
+n-Tridecan-1-ol,0.0010000000000000005
+"6,11-Dimethyl-2,6,10-dodecatrien-1-ol",0.0010000000000000005
+α-Cubebene,0.0010000000000000005
+"Heptane, 2,2-dimethyl-",0.0010000000000000005
+"Butanal, 3-methyl-",0.0010000000000000005
+α-Cubebene,0.0010000000000000005
+"Cyclohexanol, 1-methyl-4-(1-methylethenyl)-, acetate",0.0010000000000000005
+2-Nonanone,0.0010000000000000005
+p-Cresol,0.0010000000000000005
+"Cyclohexanol, 5-methyl-2-(1-methylethyl)-, (1α,2β,5α)-(ñ)-",0.0010000000000000005
+Octanal,0.0
+1-Heptanol,0.0
+1-Heptanol,0.0
+Octanal,0.0
+Tolycaine,0.0
+2-Butyl-3-(4-β-diethylaminoethoxybenzoyl)benzofuran,0.0
+"Propane, 2-methoxy-2-methyl-",0.0
+"Caryophylla-4(12),8(13)-dien-5α-ol",0.0
+Isobutylene epoxide,0.0
+"Propanal, 2-methyl-",0.0
+N-Dimethylaminomethyl-tert.-butyl-isopropylphosphine,0.0
+"Propanal, 2-methyl-",0.0
+Pentadecane,0.0
+2-Propenal,0.0
+"2,3-Pentanedione",0.0
+Dimethyl trisulfide,0.0
+Benzaldehyde,0.0
+"Bicyclo[3.1.0]hex-2-ene, 4-methyl-1-(1-methylethyl)-",0.0
+Benzaldehyde,0.0
+1-Heptanol,0.0
+"Ethanol, 2-nitro-, propionate (ester)",0.0
+"1-Penten-3-one, 2-methyl-",0.0
+Toluene,0.0
+"2-Propanethiol, 2-methyl-",0.0
+"Butanal, 2-methyl-",0.0
+"Disulfide, dimethyl",0.0
+"Disulfide, dimethyl",0.0
+"Disulfide, dimethyl",0.0
+"Tricyclo[2.2.1.0(2,6)]heptane, 1,3,3-trimethyl-",0.0
+Toluene,0.0
+Heptanal,0.0
+Hexanal,0.0
+Dimethyl sulfone,0.0
+Methional,0.0
+Dimethyl sulfone,0.0
+"2,3-Pentanedione",0.0
+"1-Hexanol, 2-ethyl-",0.0
+D-Limonene,0.0
+"Cyclohexanol, 1-methyl-4-(1-methylethenyl)-, acetate",0.0
+"Benzene, 1-methyl-3-(1-methylethyl)-",0.0
+3-Carene,0.0
+3-Carene,0.0
+3-Carene,0.0
+Hydrocinnamic acid,0.0
+"2-Decenal, (E)-",0.0
+"Benzeneacetaldehyde, α-ethylidene-",0.0
+"2-Decenal, (E)-",0.0
+Decanal,0.0
+"5-Thiazoleethanol, 4-methyl-",0.0
+Tridecane,0.0
+2-Pentanone,0.0
+n-Decanoic acid,0.0
+"Butanal, 2-methyl-",0.0
+"Butanal, 3-methyl-",0.0
+"Butanal, 2-methyl-",0.0
+Nonanal,0.0
+Benzeneacetaldehyde,0.0
+Benzeneacetaldehyde,0.0
+"Cyclohexanol, 1-methyl-4-(1-methylethenyl)-, acetate",0.0
+"2,3-Pentanedione",0.0
+2-Pentanone,0.0
+2-Pentanone,0.0
+2-Pentanone,0.0
+"Butanal, 2-methyl-",0.0
+"Butanal, 2-methyl-",0.0
+"Butanal, 3-methyl-",0.0
+"Phenol, 4-ethyl-",0.0
+Benzeneacetaldehyde,0.0
+"Butanal, 2-methyl-",0.0
+"Butanal, 2-methyl-",0.0
+"1H-Cyclopenta[1,3]cyclopropa[1,2]benzene, octahydro-7-methyl-3-methylene-4-(1-methylethyl)-, [3aS-(3aα,3bβ,4β,7α,7aS*)]-",0.0
+2-Dodecanone,0.0
+"Benzenepropionic acid, 2-tetradecyl ester",0.0
+"Nonane, 2,2,4,4,6,8,8-heptamethyl-",0.0
+Pentadecane,0.0
+"Naphthalene, 1,2,3,5,6,7,8,8a-octahydro-1,8a-dimethyl-7-(1-methylethenyl)-, [1S-(1α,7α,8aα)]-",0.0
+"Propane, 1,3-dimethoxy-",0.0
+"Butanal, 3-methyl-",0.0
+"Butanal, 2-methyl-",0.0
+"2-Butenal, (E)-",0.0
+1-Pentadecene,0.0
+trans-β-Ionone,0.0
+"5,9-Undecadien-2-one, 6,10-dimethyl-, (E)-",0.0
+"1H-Cyclopropa[a]naphthalene, 1a,2,3,5,6,7,7a,7b-octahydro-1,1,7,7a-tetramethyl-, [1aR-(1aα,7α,7aα,7bα)]-",0.0
+"2,4-Di-tert-butylphenol",0.0
+8-Heptadecene,0.0
+"Methylamine, N,N-dimethyl-",0.0
+2-Butanone,0.0
+Tolycaine,0.0
+2-Butanone,0.0
+"Propane, 2-methoxy-2-methyl-",0.0
+"2-Butenal, (Z)-",0.0
+n-Hexane,0.0
+"Butanal, 3-methyl-",0.0
+"Butanal, 3-methyl-",0.0
+cis-Calamenene,0.0
+"2-Hexadecene, 3,7,11,15-tetramethyl-, [R-[R*,R*-(E)]]-",0.0
+Hexadecane,0.0
+"Indole-3-propionitrile, α-formamido-",0.0
+trans-Geranylgeraniol,0.0

@@ -1,0 +1,16 @@
+,Metabolito,Importancia SHAP,|log2FC|,p_ajustado
+1,"Cyclohexanol, 1-methyl-4-(1-methylethenyl)-, acetate",0.0051,4.982,0.0355
+2,Benzeneacetaldehyde,0.00565,3.684,0.0355
+3,p-Cresol,0.00567,3.307,0.0355
+4,"Butanal, 2-methyl-",0.00263,2.275,0.0355
+5,Methional,0.00195,4.246,0.0355
+6,"Butanal, 3-methyl-",0.00171,3.738,0.0355
+7,"Propanal, 2-methyl-",0.00424,,0.0355
+8,Benzeneacetic acid,0.00404,,0.0355
+9,cis-Calamenene,0.00533,,0.0355
+10,"Benzeneacetaldehyde, α-ethylidene-",0.00465,,0.0355
+11,n-Decanoic acid,0.00543,,0.0355
+12,Indole,0.00543,,0.0355
+13,Dimethyl sulfone,0.00613,,0.0355
+14,Phenylethyl Alcohol,0.00557,,0.0355
+15,2-Nonanone,0.00712,,0.0355

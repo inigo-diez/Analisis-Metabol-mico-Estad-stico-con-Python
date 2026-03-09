@@ -1,0 +1,16 @@
+experiment,cluster,is_outlier
+Exp_1,0,False
+Exp_2,0,False
+Exp_3,0,False
+Exp_4,0,False
+Exp_5,1,False
+Exp_6,1,False
+Exp_7,1,False
+Exp_8,2,False
+Exp_10,1,False
+Exp_12,1,False
+Exp_13,1,False
+Exp_14,1,False
+Exp_15,1,False
+Exp_16,1,False
+Exp_17,1,False
