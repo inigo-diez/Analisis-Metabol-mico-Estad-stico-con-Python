@@ -2,11 +2,9 @@
 
 ## Descripción del proyecto
 
-Este proyecto implementa un **pipeline completo de análisis metabolómico** sobre datos de cromatografía de gases acoplada a espectrometría de masas (GC-MS). Los datos provienen de un dataset, un conjunto de datos de 17 experimentos de muestras simuladas, es decir, de datos falsos, por motivo de no poder revelar datos personales. Se detectaron aproximadamente 1.230 picos cromatográficos, de los cuales 279 superaron el umbral de calidad de identificación (Match Factor ≥ 700) y fueron anotados contra una base de datos de metabolitos asociados a condiciones de salud mental.
+Este proyecto implementa un pipeline completo de análisis metabolómico aplicado a datos de cromatografía de gases acoplada a espectrometría de masas (GC-MS). Los datos proceden de 17 experimentos generados a partir de un conjunto de muestras anonimizado, en los que se detectaron aproximadamente 1.230 picos cromatográficos. Tras aplicar un filtrado por calidad de identificación espectral (Match Factor ≥ 700), se seleccionaron 279 metabolitos para el análisis, que posteriormente se anotaron frente a una base de datos de compuestos asociados a condiciones de salud mental.
 
-El objetivo principal es identificar **metabolitos candidatos** con patrones diferenciados entre grupos de muestras, combinando análisis exploratorio, clustering no supervisado, pruebas estadísticas e interpretación basada en valores SHAP. Las técnicas empleadas incluyen reducción dimensional (PCA), clustering jerárquico y K-Means, pruebas no paramétricas con corrección FDR, modelos de clasificación supervisada (Random Forest y XGBoost) y análisis de importancia de características con SHAP.
-
-> **Nota metodológica:** Los metabolitos identificados son **candidatos priorizados** y no biomarcadores confirmados. Se requieren estudios de validación con mayor número de muestras.
+El objetivo del proyecto es explorar estos perfiles metabolómicos para identificar metabolitos candidatos con patrones diferenciales entre grupos de muestras. Para ello se combinan técnicas de análisis exploratorio y métodos de aprendizaje automático. El pipeline incluye reducción de dimensionalidad mediante PCA, métodos de clustering no supervisado (clustering jerárquico y K-means), pruebas estadísticas con corrección FDR y una exploración mediante modelos de clasificación supervisada (Random Forest y XGBoost) junto con análisis de importancia de variables mediante SHAP.
 
 ---
 
