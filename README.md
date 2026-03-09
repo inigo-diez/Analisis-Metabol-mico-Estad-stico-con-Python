@@ -2,7 +2,7 @@
 
 ## Descripción del proyecto
 
-Este proyecto implementa un **pipeline completo de análisis metabolómico** sobre datos de cromatografía de gases acoplada a espectrometría de masas (GC-MS). Los datos provienen de 17 experimentos de muestras de mi persona en los que se detectaron aproximadamente 1.230 picos cromatográficos, de los cuales 279 superaron el umbral de calidad de identificación (Match Factor ≥ 700) y fueron anotados contra una base de datos de metabolitos asociados a condiciones de salud mental.
+Este proyecto implementa un **pipeline completo de análisis metabolómico** sobre datos de cromatografía de gases acoplada a espectrometría de masas (GC-MS). Los datos provienen de 17 experimentos de muestras de dataos falsos, por motivo de no poder revelar datos personales, en los que se detectaron aproximadamente 1.230 picos cromatográficos, de los cuales 279 superaron el umbral de calidad de identificación (Match Factor ≥ 700) y fueron anotados contra una base de datos de metabolitos asociados a condiciones de salud mental.
 
 El objetivo principal es identificar **metabolitos candidatos** con patrones diferenciados entre grupos de muestras, combinando análisis exploratorio, clustering no supervisado, pruebas estadísticas e interpretación basada en valores SHAP. Las técnicas empleadas incluyen reducción dimensional (PCA), clustering jerárquico y K-Means, pruebas no paramétricas con corrección FDR, modelos de clasificación supervisada (Random Forest y XGBoost) y análisis de importancia de características con SHAP.
 
@@ -82,7 +82,7 @@ El clustermap agrupa simultáneamente experimentos y metabolitos por similitud d
 
 ### Clustermap refinado (sin Exp_9 ni Exp_11)
 
-![Clustermap refinado](results/figures/05_clustermap_no_outlier.png)
+![Clustermap refinado](figures/05_clustermap_no_outlier.png)
 
 Al excluir los outliers, el clustermap revela una estructura interna más rica con tres grupos diferenciados. Los gradientes de color son más sutiles y biológicamente más plausibles que en el análisis original.
 
