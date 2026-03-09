@@ -6,6 +6,8 @@ Este proyecto implementa un pipeline completo de análisis metabolómico aplicad
 
 El objetivo del proyecto es explorar estos perfiles metabolómicos para identificar metabolitos candidatos con patrones diferenciales entre grupos de muestras. Para ello se combinan técnicas de análisis exploratorio y métodos de aprendizaje automático. El pipeline incluye reducción de dimensionalidad mediante PCA, métodos de clustering no supervisado (clustering jerárquico y K-means), pruebas estadísticas con corrección FDR y una exploración mediante modelos de clasificación supervisada (Random Forest y XGBoost) junto con análisis de importancia de variables mediante SHAP.
 
+## No se mostrarán todas las figuras, solamente las de mayor relevancia, para visualizar todas en conjunto revise el notebook
+
 ---
 
 ## Dataset
