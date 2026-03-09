@@ -64,11 +64,35 @@ El PCA muestra que la PC1 explica el ~70% de la varianza total del dataset. Exp_
 
 ---
 
+### Matriz de correlación de Pearson entre experimentos
+
+![Correlación](figures/04_correlation_experiments.png)
+
+La matriz de correlación cuantifica la similitud entre los 17 experimentos a partir de sus perfiles de intensidad. El bloque de alta correlación que forman la mayoría de las muestras confirma la cohesión del grupo principal, mientras que Exp_9 muestra valores notablemente bajos o negativos respecto al resto, reforzando su identificación como outlier extremo con una métrica independiente del PCA.
+
+---
+
+### Top 20 picos con mayor varianza entre experimentos
+
+![Top variable compounds](figures/04_top_variable_compounds.png)
+
+Los 20 picos cromatográficos con mayor varianza entre los 17 experimentos son los que más información aportan para distinguir entre muestras. Este gráfico identifica qué metabolitos presentan la señal más diferenciada a lo largo del dataset y orienta la selección de candidatos para el análisis posterior de clustering y machine learning.
+
+---
+
 ### Dendrograma de clustering jerárquico
 
 ![Dendrograma](figures/05_dendrogram_experiments.png)
 
 El dendrograma confirma la separación extrema de Exp_9, que forma una rama propia con el mayor enlace de disimilitud del árbol. El resto de los experimentos se agrupan en una rama compacta con distintos subgrupos internos.
+
+---
+
+### Perfil de intensidad media por cluster de compuestos
+
+![Cluster profiles](figures/05_cluster_profiles.png)
+
+Perfil de intensidad media de los compuestos agrupados por cluster K-Means a lo largo de los 17 experimentos. Cada línea representa el patrón de abundancia promedio de un grupo de metabolitos, permitiendo identificar qué clusters de compuestos se sobreexpresan o infraexpresan en cada experimento y en qué grupos de muestras se concentra la señal diferencial.
 
 ---
 
@@ -90,7 +114,7 @@ Al excluir los outliers, el clustermap revela una estructura interna más rica c
 
 ### Importancia SHAP – Top 20 metabolitos (análisis original)
 
-![SHAP beeswarm](figures/08_shap_beeswarm_original.png)
+![SHAP beeswarm](08_shap_beeswarm_original.png)
 
 Los 20 metabolitos con mayor importancia SHAP media absoluta para la separación de clusters. Phenol y Humulene encabezan el ranking, siendo los principales impulsores de la clasificación del modelo sobre el análisis original.
 
@@ -98,7 +122,7 @@ Los 20 metabolitos con mayor importancia SHAP media absoluta para la separación
 
 ### Metabolitos candidatos priorizados – Bubble plot (análisis refinado)
 
-![Bubble plot refinado](figures/08_bubble_candidatos_refinado.png)
+![Bubble plot refinado](08_bubble_candidatos_refinado.png)
 
 El bubble plot integra tres métricas simultáneamente: importancia SHAP (eje X), |log2FC| (eje Y) y evidencia estadística (tamaño de burbuja). Los candidatos en la zona superior derecha con burbujas grandes representan las señales metabólicas con mayor convergencia de evidencia.
 
@@ -106,7 +130,7 @@ El bubble plot integra tres métricas simultáneamente: importancia SHAP (eje X)
 
 ### Comparación SHAP: análisis original vs. refinado
 
-![Comparación SHAP](figures/08_shap_comparison_orig_vs_refined.png)
+![Comparación SHAP](08_shap_comparison_orig_vs_refined.png)
 
 La comparación evidencia cómo Exp_9 distorsiona el ranking de importancia SHAP. Algunos metabolitos pierden relevancia al excluir el outlier, mientras que otros emergen como más discriminantes en el contexto del grupo principal.
 
@@ -125,6 +149,14 @@ Panel del preprocesamiento: distribución de intensidades por experimento antes 
 ![Matching resultados](figures/02_matching_results.png)
 
 Resumen visual del proceso de anotación: proporción de picos con coincidencia exacta, por derivado o sin match contra la base de datos de referencia. El umbral de Match Factor ≥ 700 garantiza que solo se retienen picos con una identidad química fiable para el análisis.
+
+---
+
+### Heatmap top 30 metabolitos por fold change (análisis original)
+
+![Heatmap top30](figures/06_heatmap_top30.png)
+
+Heatmap de abundancias de los 30 metabolitos con mayor fold change absoluto entre clusters, mostrando su distribución a lo largo de los 17 experimentos. El patrón de colores evidencia la separación extrema de Exp_9 respecto al grupo principal, con bloques de metabolitos claramente sobreexpresados en el outlier que apenas varían en el resto de las muestras.
 
 ---
 
