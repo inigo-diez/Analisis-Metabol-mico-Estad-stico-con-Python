@@ -1,4 +1,4 @@
-# Análisis Metabolómico: Identificación de Metabolitos Candidatos en Salud Mental con Python
+# Análisis Metabolómico: Identificación de Metabolitos Candidatos como Indicadores de Trastornos Mentales mediante Python
 
 ## Descripción del proyecto
 
