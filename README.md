@@ -21,7 +21,7 @@ El objetivo del proyecto es explorar estos perfiles metabolómicos para identifi
 | Transformación aplicada | log₂ + RobustScaler |
 | Outliers identificados | Exp_9 (extremo), Exp_11 (moderado) |
 
-Los datos crudos están en `data raw` y los datos procesados en `data csv`.
+Los datos crudos están en `data raw` y los datos procesados en `processed csv`.
 
 ---
 
