@@ -29,7 +29,7 @@ Los datos crudos están en `data raw` y los datos procesados en `processed csv`.
 
 | Notebook | Descripción |
 |----------|-------------|
-| [01 – Carga y contaminantes](notebooks/01_data_loading_and_contamination.ipynb) | Carga de los datos GC-MS desde Excel, eliminación de contaminantes comunes (silanos, siloxanos, derivados TMS, oximas) y selección de picos de calidad. |
+| [01 – Carga y contaminantes](Proyecto separado en nootebooks/01_data_loading_and_contamination.ipynb) | Carga de los datos GC-MS desde Excel, eliminación de contaminantes comunes (silanos, siloxanos, derivados TMS, oximas) y selección de picos de calidad. |
 | [02 – Anotación de metabolitos](notebooks/02_database_matching.ipynb) | Matching automático de los picos cromatográficos contra una base de datos de metabolitos asociados a salud mental, mediante coincidencia exacta e identificación de derivados. |
 | [03 – Preprocesamiento](notebooks/03_preprocessing.ipynb) | Construcción de la matriz de intensidades, tratamiento de ceros como ausencia de detección, transformación log₂ para normalizar distribuciones y escalado robusto (RobustScaler). |
 | [04 – Análisis exploratorio](notebooks/04_exploratory_analysis.ipynb) | PCA sobre los 17 experimentos, matriz de correlación entre muestras y análisis de los picos más variables para caracterizar la estructura global del dataset. |
