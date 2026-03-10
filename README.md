@@ -29,14 +29,14 @@ Los datos crudos están en `data raw` y los datos procesados en `processed csv`.
 
 | Notebook | Descripción |
 |----------|-------------|
-| [01 – Carga y contaminantes](Proyecto separado en notebooks/01_data_loading_and_contamination.ipynb) | Carga de los datos GC-MS desde Excel, eliminación de contaminantes comunes (silanos, siloxanos, derivados TMS, oximas) y selección de picos de calidad. |
-| [02 – Anotación de metabolitos](Proyecto separado en notebooks/02_database_matching.ipynb) | Matching automático de los picos cromatográficos contra una base de datos de metabolitos asociados a salud mental, mediante coincidencia exacta e identificación de derivados. |
-| [03 – Preprocesamiento](Proyecto separado en notebooks/03_preprocessing.ipynb) | Construcción de la matriz de intensidades, tratamiento de ceros como ausencia de detección, transformación log₂ para normalizar distribuciones y escalado robusto (RobustScaler). |
-| [04 – Análisis exploratorio](Proyecto separado en notebooks/04_exploratory_analysis.ipynb) | PCA sobre los 17 experimentos, matriz de correlación entre muestras y análisis de los picos más variables para caracterizar la estructura global del dataset. |
-| [05 – Clustering](Proyecto separado en notebooks/05_clustering.ipynb) | Clustering jerárquico (Ward) y K-Means sobre experimentos y compuestos, con selección de K mediante elbow y silhouette. Incluye análisis refinado sin los outliers detectados. |
-| [06 – Tests estadísticos](Proyecto separado en notebooks/06_hypothesis_testing.ipynb) | Mann-Whitney U y Kruskal-Wallis con corrección FDR (Benjamini-Hochberg), análisis de fold change y volcano plots para ambos análisis (original y refinado). |
-| [07 – Machine learning](Proyecto separado en notebooks/07_ml_pipeline.ipynb) | Clasificación por clusters con Random Forest y XGBoost usando validación Leave-One-Out (LOO-CV). Análisis de importancia de características con SHAP TreeExplainer. |
-| [08 – Interpretación](Proyecto separado en notebooks/08_interpretation_and_biomarkers.ipynb) | Ranking integrado SHAP + fold change + p-valor con deduplicación, identificación de metabolitos candidatos priorizados por intersección de criterios y heatmap de abundancias z-score. |
+| [01 – Carga y contaminantes](Proyecto_separado_en_notebooks/01_data_loading_and_contamination.ipynb) | Carga de los datos GC-MS desde Excel, eliminación de contaminantes comunes (silanos, siloxanos, derivados TMS, oximas) y selección de picos de calidad. |
+| [02 – Anotación de metabolitos](Proyecto_separado_en_notebooks/02_database_matching.ipynb) | Matching automático de los picos cromatográficos contra una base de datos de metabolitos asociados a salud mental, mediante coincidencia exacta e identificación de derivados. |
+| [03 – Preprocesamiento](Proyecto_separado_en_notebooks/03_preprocessing.ipynb) | Construcción de la matriz de intensidades, tratamiento de ceros como ausencia de detección, transformación log₂ para normalizar distribuciones y escalado robusto (RobustScaler). |
+| [04 – Análisis exploratorio](Proyecto_separado_en_notebooks/04_exploratory_analysis.ipynb) | PCA sobre los 17 experimentos, matriz de correlación entre muestras y análisis de los picos más variables para caracterizar la estructura global del dataset. |
+| [05 – Clustering](Proyecto_separado_en_notebooks/05_clustering.ipynb) | Clustering jerárquico (Ward) y K-Means sobre experimentos y compuestos, con selección de K mediante elbow y silhouette. Incluye análisis refinado sin los outliers detectados. |
+| [06 – Tests estadísticos](Proyecto_separado_en_notebooks/06_hypothesis_testing.ipynb) | Mann-Whitney U y Kruskal-Wallis con corrección FDR (Benjamini-Hochberg), análisis de fold change y volcano plots para ambos análisis (original y refinado). |
+| [07 – Machine learning](Proyecto_separado_en_notebooks/07_ml_pipeline.ipynb) | Clasificación por clusters con Random Forest y XGBoost usando validación Leave-One-Out (LOO-CV). Análisis de importancia de características con SHAP TreeExplainer. |
+| [08 – Interpretación](Proyecto_separado_en_notebooks/08_interpretation_and_biomarkers.ipynb) | Ranking integrado SHAP + fold change + p-valor con deduplicación, identificación de metabolitos candidatos priorizados por intersección de criterios y heatmap de abundancias z-score. |
 
 El notebook [00 – Pipeline completo](notebooks/00_proyecto_completo.ipynb) integra todos los análisis anteriores en un único documento con interpretaciones de cada visualización.
 
