@@ -150,7 +150,7 @@ El bubble plot integra tres métricas simultáneamente: importancia SHAP (eje X)
 
 ![Comparación SHAP](figures/08_shap_comparison_orig_vs_refined.png)
 
-La comparación evidencia cómo Exp_9 distorsiona el ranking de importancia SHAP. Algunos metabolitos pierden relevancia al excluir el outlier, mientras que otros emergen como más discriminantes en el contexto del grupo principal.
+La comparación evidencia cómo Exp_9 distorsiona el ranking de importancia SHAP. Algunos metabolitos pierden relevancia al excluir el outlier, mientras que otros se vuelven más discriminantes en el contexto del grupo principal.
 
 ---
 
@@ -158,7 +158,7 @@ La comparación evidencia cómo Exp_9 distorsiona el ranking de importancia SHAP
 
 ![Heatmap top30](figures/06_heatmap_top30.png)
 
-Heatmap de abundancias (z-score) de los 30 metabolitos con mayor fold change entre clusters, mostrando su distribución a lo largo de los 17 experimentos. Se observa que Exp_9 presenta un patrón claramente diferenciado respecto al resto de muestras, mientras que el grupo principal muestra perfiles más homogéneos. Este comportamiento explica en parte la separación observada en los análisis multivariantes.
+Heatmap de abundancias (z-score) de los 30 metabolitos con mayor fold change entre clusters, mostrando su distribución a lo largo de los 17 experimentos. Se observa que Exp_9 presenta un patrón diferenciado respecto al resto de muestras, mientras que el grupo principal muestra perfiles más homogéneos. Este comportamiento explica en parte la separación observada en los análisis multivariantes.
 
 ---
 
