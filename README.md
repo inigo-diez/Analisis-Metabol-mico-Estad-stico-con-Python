@@ -38,7 +38,7 @@ Los datos crudos están en `data raw` y los datos procesados en `processed csv`.
 | [07 – Machine learning](Proyecto_separado_en_notebooks/07_ml_pipeline.ipynb) | Clasificación por clusters con Random Forest y XGBoost usando validación Leave-One-Out (LOO-CV). Análisis de importancia de características con SHAP TreeExplainer. |
 | [08 – Interpretación](Proyecto_separado_en_notebooks/08_interpretation_and_biomarkers.ipynb) | Ranking integrado SHAP + fold change + p-valor con deduplicación, identificación de metabolitos candidatos priorizados por intersección de criterios y heatmap de abundancias z-score. |
 
-El notebook [00 – Pipeline completo](notebooks/00_proyecto_completo.ipynb) integra todos los análisis anteriores en un único documento con interpretaciones de cada visualización.
+El notebook [00 – Pipeline completo](00_proyecto_completo.ipynb) integra todos los análisis anteriores en un único documento con interpretaciones de cada visualización.
 
 ---
 
