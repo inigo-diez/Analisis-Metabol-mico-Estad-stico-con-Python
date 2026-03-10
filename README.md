@@ -134,7 +134,7 @@ Al excluir los outliers, el clustermap revela una estructura interna con tres gr
 
 ![SHAP beeswarm](figures/08_shap_beeswarm_original.png)
 
-Ranking de los metabolitos con mayor importancia SHAP media absoluta en el modelo Random Forest del análisis original. Los compuestos con valores SHAP más altos son los que más influyen en la capacidad del modelo para separar los clusters. Por ello, este gráfico permite identificar qué metabolitos tienen mayor peso predictivo en la clasificación.
+Ranking de los metabolitos con mayor importancia SHAP media absoluta en el modelo Random Forest del análisis original. Los valores SHAP indican cuánto contribuye cada variable a la capacidad del modelo para separar los clusters: cuanto mayor es el valor, mayor es su peso en la clasificación. Se observa que algunos compuestos, como derivados de butanal, aparecen repetidos en el ranking. Esto se debe a que en los datos de GC-MS un mismo metabolito puede detectarse en varios picos cromatográficos, a distintos tiempos de retención. Además, cada pico se trata como una variable distinta dentro del modelo, lo que explica la repetición del butanal y sus derivados en el gráfico.
 
 ---
 
